@@ -14,8 +14,15 @@ addTask.addEventListener("click", function () {
     const li = document.createElement("li");
 
     li.textContent = task;
+    li.addEventListener("click", function () {
+        li.style.textDecoration = "line-through";
+    });
 
     taskList.appendChild(li);
 
     taskInput.value = "";
 });
+
+
+
+
